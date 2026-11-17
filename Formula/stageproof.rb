@@ -7,20 +7,20 @@ class Stageproof < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/stageproof/stageproof/releases/download/v0.1.0/stageproof_0.1.0_darwin_arm64.tar.gz"
-      sha256 "cc40aa4d6305e6c32104e1e0b6ac5efadf3f82b60c41c34044f7753755b20217"
+      sha256 "82419a1ed2d5943df8fcb8127482cc57b0afad7fc15447025631251419944edf"
     else
       url "https://github.com/stageproof/stageproof/releases/download/v0.1.0/stageproof_0.1.0_darwin_amd64.tar.gz"
-      sha256 "8f2c24bd0975521ad13226101e380891123e7bc203201ef8bbc6d4a28d3a9ab6"
+      sha256 "aaecb5662fd7758ce8574dfdb463a9ffb29c2609fd78c4d67dcfd4a156bf6262"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/stageproof/stageproof/releases/download/v0.1.0/stageproof_0.1.0_linux_arm64.tar.gz"
-      sha256 "15f1148821d11b25304225098bfd2172af79ccceba5647823707d253e0ee70bc"
+      sha256 "9b25c92d78b360caea02edc9cf614ab92bb9bfe3ce585cd0f0cb7c51fd9dece8"
     else
       url "https://github.com/stageproof/stageproof/releases/download/v0.1.0/stageproof_0.1.0_linux_amd64.tar.gz"
-      sha256 "ebabfb0495c5ff6533798012e63d4d6fdb73472816d3d2b88f44288cb5639ac5"
+      sha256 "184b857417f18a2c2bf8c58f1e947991ef74e6ee9b7693a5213c0d0a23031e57"
     end
   end
 
