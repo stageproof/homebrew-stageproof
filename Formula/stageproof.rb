@@ -1,26 +1,26 @@
 class Stageproof < Formula
   desc "Check a Helm chart upgrade before you merge it"
   homepage "https://github.com/stageproof/stageproof"
-  version "0.4.0"
+  version "0.5.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/stageproof/stageproof/releases/download/v0.4.0/stageproof_0.4.0_darwin_arm64.tar.gz"
-      sha256 "611c4bc123aec9ee345e006d1bd8272ea64e0ce0959b3fc75dbb1d61428f0fc7"
+      url "https://github.com/stageproof/stageproof/releases/download/v0.5.0/stageproof_0.5.0_darwin_arm64.tar.gz"
+      sha256 "2d9b1b3264efaeb82acf6cdd2c52673af7d965606dcf9199bcd1ec1463888868"
     else
-      url "https://github.com/stageproof/stageproof/releases/download/v0.4.0/stageproof_0.4.0_darwin_amd64.tar.gz"
-      sha256 "dedaca132b5164b80c96681c3474c02f4644f4afbc7c059950170e2ccbd79ab2"
+      url "https://github.com/stageproof/stageproof/releases/download/v0.5.0/stageproof_0.5.0_darwin_amd64.tar.gz"
+      sha256 "fdc30934e0c2c0849f1d4a3fbe2ff39ab8338669f5e0cb59898884e2342b035e"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/stageproof/stageproof/releases/download/v0.4.0/stageproof_0.4.0_linux_arm64.tar.gz"
-      sha256 "ff0691be51e23bd02b01ffe7a6647421c368131ce7849310637f149f856c103e"
+      url "https://github.com/stageproof/stageproof/releases/download/v0.5.0/stageproof_0.5.0_linux_arm64.tar.gz"
+      sha256 "7f03e216e8950ee2287f100c901790303ea8284d6e794e755803d88730c277fb"
     else
-      url "https://github.com/stageproof/stageproof/releases/download/v0.4.0/stageproof_0.4.0_linux_amd64.tar.gz"
-      sha256 "08606de4b2bef53398b9edb69aeb80248221e47b49cafd0f920d551d608524b1"
+      url "https://github.com/stageproof/stageproof/releases/download/v0.5.0/stageproof_0.5.0_linux_amd64.tar.gz"
+      sha256 "4fa6b945b05386c9a3cfc5f9bea832668f0308df5f800ad1249a46f449f5279a"
     end
   end
 
@@ -29,6 +29,6 @@ class Stageproof < Formula
   end
 
   test do
-    assert_match "v0.4.0", shell_output("#{bin}/stageproof version")
+    assert_match "v0.5.0", shell_output("#{bin}/stageproof version")
   end
 end
